@@ -2,6 +2,11 @@
 
 ReactJS views that allows a gift recipient (person claiming a gift) to enter her/his shipping information and helps the team (administrators) see all the shipping informations entered by all gift claimers.
 
+# Link on Heroku
+```
+https://reactjs-exercie.herokuapp.com/
+```
+
 # Installation
 
 Clone the repository and run `npm install`
