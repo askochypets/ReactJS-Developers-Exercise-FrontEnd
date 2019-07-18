@@ -28,7 +28,12 @@ const api = {
 };
 const _urlBuilder = () => {
   const API_ENV = config.API_ENV;
-  return `http://${API_ENV}`;
+  let protocol = "https";
+
+  if (~API_ENV.indexOf("localhost")) {
+    protocol = "http";
+  }
+  return `${protocol}://${API_ENV}`;
 };
 
 export default api;
