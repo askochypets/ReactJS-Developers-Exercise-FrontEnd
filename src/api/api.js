@@ -33,6 +33,8 @@ const _urlBuilder = () => {
   if (~API_ENV.indexOf("localhost")) {
     protocol = "http";
   }
+  console.log(API_ENV);
+
   return `${protocol}://${API_ENV}`;
 };
 
